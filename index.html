@@ -7,93 +7,117 @@
 <script src="lang.js"></script>
 <meta name="description" content="Saix is an indie game developer. Puzzle and action games for Android and the web.">
 <link rel="icon" href="dicewise/Dicewise-Icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
+<main class="wide">
 <div class="top">
+  <a class="brand" href="./">saix93</a>
   <button class="lang-toggle" type="button" aria-label="Change language / Cambiar idioma"><span class="en">EN</span> · <span class="es">ES</span></button>
 </div>
 
-<h1>Saix</h1>
-<p class="meta" lang="en">Indie game developer</p>
-<p class="meta" lang="es">Desarrollador de videojuegos indie</p>
-
-<p lang="en">Hi, I'm Saix. I code, I game and I code games.</p>
-<p lang="es">Hola, soy Saix. Programo, juego y programo juegos.</p>
-
-<ul class="links">
-  <li><a href="https://saix93.itch.io/">itch.io</a></li>
-  <li><a href="https://github.com/saix93">GitHub</a></li>
-  <li><a href="mailto:r.torresgonzalez.93@gmail.com">Email</a></li>
-</ul>
-
-<h2><span lang="en">Featured</span><span lang="es">Destacado</span></h2>
-<div class="featured">
-  <img src="dicewise/Dicewise-Icon.png" alt="Dicewise" width="112" height="112">
+<header class="hero">
   <div>
-    <h3>Dicewise <span class="badge">Android</span></h3>
+    <p class="eyebrow"><span lang="en">// indie game developer</span><span lang="es">// desarrollador de videojuegos indie</span></p>
+    <h1>Saix</h1>
+    <p class="lead" lang="en">Hi, I'm Saix. I code, I game and I code games.</p>
+    <p class="lead" lang="es">Hola, soy Saix. Programo, juego y programo juegos.</p>
+    <div class="actions">
+      <a class="pill" href="https://saix93.itch.io/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="11" r=".6" fill="currentColor"/><circle cx="18" cy="13.5" r=".6" fill="currentColor"/></svg>
+        itch.io
+      </a>
+      <a class="pill" href="https://github.com/saix93">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg>
+        GitHub
+      </a>
+      <a class="pill" href="mailto:r.torresgonzalez.93@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email
+      </a>
+    </div>
+  </div>
+  <div class="scene" aria-hidden="true">
+    <div class="die"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+</header>
+
+<h2 class="section-title"><span class="idx">01</span><span lang="en">Featured</span><span lang="es">Destacado</span></h2>
+<article class="featured">
+  <a class="art" href="dicewise/"><img src="dicewise/FeatureGraphic.png" alt="Dicewise" width="1024" height="500"></a>
+  <div class="body">
+    <ul class="tags">
+      <li class="badge">Android</li>
+      <li class="badge"><span lang="en">Puzzle</span><span lang="es">Puzle</span></li>
+      <li class="badge soon"><span lang="en">Coming soon</span><span lang="es">Próximamente</span></li>
+    </ul>
+    <h3><img src="dicewise/Dicewise-Icon.png" alt="" width="48" height="48">Dicewise</h3>
     <p lang="en">A calm logic puzzle about a rolling die. Every roll tips it onto a new face, so where you can go next depends on every move you made before.</p>
     <p lang="es">Un puzle de lógica tranquilo sobre un dado que rueda. Cada movimiento lo vuelca sobre una cara nueva, así que adónde puedes ir depende de todo lo que has hecho antes.</p>
-    <a class="button" href="dicewise/"><span lang="en">See the game</span><span lang="es">Ver el juego</span></a>
+    <a class="button" href="dicewise/"><span lang="en">See the game</span><span lang="es">Ver el juego</span> →</a>
   </div>
-</div>
+</article>
 
-<h2><span lang="en">Games on itch.io</span><span lang="es">Juegos en itch.io</span></h2>
+<h2 class="section-title"><span class="idx">02</span><span lang="en">Games on itch.io</span><span lang="es">Juegos en itch.io</span></h2>
 <ul class="grid">
   <li><a href="https://saix93.itch.io/w-va">
-    <img src="img/games/w-va.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/w-va.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Puzzle</span><span lang="es">Puzle</span></span></div>
     <div class="info"><h3>W = V * A</h3>
-      <p lang="en">Puzzle · Made for Mini Jam 157: Electric</p>
-      <p lang="es">Puzle · Hecho para la Mini Jam 157: Electric</p></div>
+      <p lang="en">Made for Mini Jam 157: Electric</p>
+      <p lang="es">Hecho para la Mini Jam 157: Electric</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/rgb-thegame">
-    <img src="img/games/rgb-thegame.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/rgb-thegame.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Action</span><span lang="es">Acción</span></span></div>
     <div class="info"><h3>RGB: Reincarnating Gunner Block</h3>
-      <p lang="en">Action · Made for Mini Jam 111: Colors²</p>
-      <p lang="es">Acción · Hecho para la Mini Jam 111: Colors²</p></div>
+      <p lang="en">Made for Mini Jam 111: Colors²</p>
+      <p lang="es">Hecho para la Mini Jam 111: Colors²</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/save-the-date">
-    <img src="img/games/save-the-date.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/save-the-date.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Puzzle</span><span lang="es">Puzle</span></span></div>
     <div class="info"><h3>Save the date!</h3>
-      <p lang="en">Puzzle · Organize the guests in consecutive weddings</p>
-      <p lang="es">Puzle · Organiza a los invitados de bodas consecutivas</p></div>
+      <p lang="en">Organize the guests in consecutive weddings</p>
+      <p lang="es">Organiza a los invitados de bodas consecutivas</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/bamboo-slicer">
-    <img src="img/games/bamboo-slicer.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/bamboo-slicer.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Action</span><span lang="es">Acción</span></span></div>
     <div class="info"><h3>Bamboo slicer</h3>
-      <p lang="en">Action · A game about cutting bamboo</p>
-      <p lang="es">Acción · Un juego sobre cortar bambú</p></div>
+      <p lang="en">A game about cutting bamboo</p>
+      <p lang="es">Un juego sobre cortar bambú</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/pirate-bounty">
-    <img src="img/games/pirate-bounty.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/pirate-bounty.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Action</span><span lang="es">Acción</span></span></div>
     <div class="info"><h3>Pirate Bounty</h3>
-      <p lang="en">Action · Made for Kenney Jam 2021</p>
-      <p lang="es">Acción · Hecho para la Kenney Jam 2021</p></div>
+      <p lang="en">Made for Kenney Jam 2021</p>
+      <p lang="es">Hecho para la Kenney Jam 2021</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/cicelvania">
-    <img src="img/games/cicelvania.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/cicelvania.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Adventure</span><span lang="es">Aventura</span></span></div>
     <div class="info"><h3>Cicelvania</h3>
-      <p lang="en">Adventure · A personal take on Castlevania</p>
-      <p lang="es">Aventura · Mi versión personal de Castlevania</p></div>
+      <p lang="en">A personal take on Castlevania</p>
+      <p lang="es">Mi versión personal de Castlevania</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/splintercice">
-    <img src="img/games/splintercice.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/splintercice.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">Action</span><span lang="es">Acción</span></span></div>
     <div class="info"><h3>SplinterCICE</h3>
-      <p lang="en">Action · Stealth inspired by Metal Gear and Splinter Cell</p>
-      <p lang="es">Acción · Sigilo inspirado en Metal Gear y Splinter Cell</p></div>
+      <p lang="en">Stealth inspired by Metal Gear and Splinter Cell</p>
+      <p lang="es">Sigilo inspirado en Metal Gear y Splinter Cell</p></div>
   </a></li>
   <li><a href="https://saix93.itch.io/krosus">
-    <img src="img/games/krosus.png" alt="" width="315" height="250" loading="lazy">
+    <div class="thumb"><img src="img/games/krosus.png" alt="" width="315" height="250" loading="lazy"><span class="genre"><span lang="en">RPG</span><span lang="es">Rol</span></span></div>
     <div class="info"><h3>Krosus</h3>
-      <p lang="en">Role Playing</p>
-      <p lang="es">Rol</p></div>
+      <p lang="en">A role-playing game</p>
+      <p lang="es">Un juego de rol</p></div>
   </a></li>
 </ul>
-<p><a href="https://saix93.itch.io/"><span lang="en">All games on itch.io →</span><span lang="es">Todos los juegos en itch.io →</span></a></p>
+<a class="more" href="https://saix93.itch.io/"><span lang="en">All games on itch.io →</span><span lang="es">Todos los juegos en itch.io →</span></a>
 
-<hr>
-<p class="meta">© 2026 Saix</p>
+<footer class="footer">
+  <span>© 2026 Saix</span>
+  <ul class="pips" aria-hidden="true"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+</footer>
 </main>
 </body>
 </html>
