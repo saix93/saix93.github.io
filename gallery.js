@@ -2,7 +2,7 @@
 (function () {
   var items = Array.prototype.slice.call(document.querySelectorAll('.gallery li'));
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
-  var box = document.querySelector('.lightbox');
+  var box = document.querySelector('.photo-box');
   var img = box.querySelector('img');
   var cap = box.querySelector('.lb-cap');
   var count = box.querySelector('.lb-count');
