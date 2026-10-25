@@ -1,26 +1,47 @@
-// Photo gallery: category filters and a lightbox with keyboard and swipe navigation.
+// Photo gallery: category filters and a full-size lightbox with keyboard and swipe navigation.
 (function () {
   var items = Array.prototype.slice.call(document.querySelectorAll('.gallery li'));
-  var buttons = document.querySelectorAll('.filters button');
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
   var box = document.querySelector('.lightbox');
   var img = box.querySelector('img');
+  var cap = box.querySelector('.lb-cap');
+  var count = box.querySelector('.lb-count');
   var current = 0;
 
-  Array.prototype.forEach.call(buttons, function (b) {
+  // Filters: fill in the counts, then animate between layouts where View Transitions are supported.
+  buttons.forEach(function (b) {
+    var f = b.getAttribute('data-filter');
+    b.querySelector('.count').textContent = items.filter(function (li) {
+      return f === 'all' || li.getAttribute('data-cat') === f;
+    }).length;
+  });
+  items.forEach(function (li, i) { li.style.viewTransitionName = 'photo-' + i; });
+
+  buttons.forEach(function (b) {
     b.addEventListener('click', function () {
       var f = b.getAttribute('data-filter');
-      Array.prototype.forEach.call(buttons, function (o) { o.setAttribute('aria-pressed', o === b); });
-      items.forEach(function (li) { li.hidden = f !== 'all' && li.getAttribute('data-cat') !== f; });
+      function apply() {
+        buttons.forEach(function (o) { o.setAttribute('aria-pressed', o === b); });
+        items.forEach(function (li) { li.hidden = f !== 'all' && li.getAttribute('data-cat') !== f; });
+      }
+      if (document.startViewTransition && !matchMedia('(prefers-reduced-motion: reduce)').matches) document.startViewTransition(apply);
+      else apply();
     });
   });
 
+  // Lightbox
   function visible() { return items.filter(function (li) { return !li.hidden; }); }
 
   function show(li) {
-    var a = li.querySelector('a');
-    current = visible().indexOf(li);
-    img.src = a.href;
-    img.alt = a.querySelector('img').alt;
+    var v = visible();
+    current = v.indexOf(li);
+    img.classList.remove('swap');
+    void img.offsetWidth; // Restart the fade-in animation.
+    img.classList.add('swap');
+    img.src = li.querySelector('a').href;
+    img.alt = li.querySelector('img').alt;
+    cap.innerHTML = li.querySelector('.cap').innerHTML;
+    count.textContent = (current + 1) + ' / ' + v.length;
   }
 
   function step(d) {
