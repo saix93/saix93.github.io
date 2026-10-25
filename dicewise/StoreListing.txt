@@ -1,0 +1,91 @@
+DICEWISE · GOOGLE PLAY STORE LISTING
+====================================
+
+Limits: app name 30 characters, short description 80, full description 4000.
+Category: Game › Puzzle. Tags: Logic, Puzzle, Brain games, Casual, Offline.
+English is the default language; the Spanish text goes in as a translation (Store presence › Store listing › Manage translations).
+
+
+------------------------------------------------------------
+ENGLISH (en-US)
+------------------------------------------------------------
+
+APP NAME
+Dicewise: Rolling Dice Puzzle
+
+(Or just "Dicewise". The longer name helps people searching for "dice puzzle" find the game.)
+
+SHORT DESCRIPTION
+Roll the die to the goal. Every face matters in this calm logic puzzle.
+
+FULL DESCRIPTION
+Dicewise is a puzzle game built on one simple idea: a die that rolls.
+
+Every roll tips the die onto a new face, so where you can go next depends on every move you made before. Plan your path, land the right color in the right place and reach the golden goal.
+
+THINK BEFORE YOU ROLL
+• Swipe to roll the die across the board
+• Color tiles only accept the face of their own color
+• The board shows which face will land on each side, so you can plan ahead without keeping the whole die in your head
+• Undo is free. No lives, no timers, no rush
+
+NEW RULES KEEP COMING
+Cracked tiles that break behind you. Stamps to fill with the right color. Ice that sends the die sliding. Turntables that spin it, switches that open doors, bridges that rise and teleporters that send it across the board. Each rule is introduced with a short card, then mixed with the ones you already know.
+
+AN ENDLESS RUN OF PUZZLES
+Levels keep coming, each one checked to have a solution, from gentle first steps to boards that will make you stop and think.
+
+CHASE THREE STARS
+Finish a level in the fewest moves to earn all three stars. Stuck? A hint shows you the next step, at the cost of a star.
+
+MAKE IT YOURS
+Earn coins as you play and spend them on more than 50 dice and backgrounds, from soft pastels to gold and diamond. Watch an optional video after a level to double your coins.
+
+Play offline, at your own pace, a few levels at a time.
+
+
+------------------------------------------------------------
+ESPAÑOL (es-ES)
+------------------------------------------------------------
+
+NOMBRE DE LA APP
+Dicewise: Puzzle de dados
+
+DESCRIPCIÓN BREVE
+Rueda el dado hasta la meta. En este puzle de lógica, cada cara cuenta.
+
+DESCRIPCIÓN COMPLETA
+Dicewise es un juego de puzles con una idea sencilla: un dado que rueda.
+
+Cada movimiento vuelca el dado sobre una cara nueva, así que adónde puedes ir depende de todo lo que has hecho antes. Planea tu camino, pon el color adecuado en el sitio adecuado y llega a la meta dorada.
+
+PIENSA ANTES DE RODAR
+• Desliza para hacer rodar el dado por el tablero
+• Las casillas de color solo aceptan la cara de su color
+• El tablero te muestra qué cara caerá en cada lado, para que planees sin tener que memorizar el dado
+• Deshacer es gratis. Sin vidas, sin cronómetros, sin prisas
+
+SIEMPRE HAY REGLAS NUEVAS
+Casillas agrietadas que se rompen a tu paso. Sellos que llenar con el color correcto. Hielo que hace deslizar el dado. Plataformas giratorias, interruptores que abren puertas, puentes que se levantan y teletransportes que lo mandan al otro lado del tablero. Cada regla se presenta con una tarjeta breve y luego se mezcla con las que ya conoces.
+
+PUZLES SIN FIN
+Los niveles no se acaban, y todos tienen solución comprobada: desde primeros pasos tranquilos hasta tableros que te harán parar a pensar.
+
+CONSIGUE LAS TRES ESTRELLAS
+Termina un nivel con el mínimo de movimientos para conseguir las tres estrellas. ¿Atascado? Una pista te muestra el siguiente paso, a cambio de una estrella.
+
+HAZLO TUYO
+Gana monedas jugando y gástalas en más de 50 dados y fondos, desde tonos pastel hasta oro y diamante. Mira un vídeo opcional al terminar un nivel para duplicar tus monedas.
+
+Juega sin conexión, a tu ritmo, unos pocos niveles cada vez.
+
+
+------------------------------------------------------------
+GRAPHICS (in this folder)
+------------------------------------------------------------
+
+App icon ............ Dicewise-Icon.png (512 x 512)
+Feature graphic ..... FeatureGraphic.png (1024 x 500)
+Phone screenshots ... Screenshots/01 to 06 (1080 x 1920), upload in this order
+
+Regenerate the screenshots after interface changes: enter Play mode, then Tools › Dicewise › Capture Store Screenshots.
