@@ -26,7 +26,7 @@
 
   // Reveal on scroll, staggered within each group of siblings
   if (!('IntersectionObserver' in window)) return;
-  var targets = document.querySelectorAll('.section-title, .featured, .grid > li, .videos > li, .channel, .gallery > li, .filters, .section-intro, .more, .banner, .game-head, .tagline, .shots, .feature, .footer');
+  var targets = document.querySelectorAll('.section-title, .featured, .grid > li, .videos > li, .section-cta, .gallery > li, .filters, .section-intro, .banner, .game-head, .tagline, .store-row, .shots, .feature');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (!en.isIntersecting) return;
@@ -36,7 +36,7 @@
       // Drop the stagger once revealed so it doesn't delay hover effects.
       setTimeout(function () { el.style.transitionDelay = ''; }, 1000);
     });
-  }, { rootMargin: '0px 0px -8% 0px' });
+  }, { threshold: 0.05 });
   Array.prototype.forEach.call(targets, function (el) {
     var i = Array.prototype.indexOf.call(el.parentNode.children, el);
     if (el.matches('.grid > li, .videos > li, .gallery > li, .feature')) el.style.transitionDelay = Math.min(i % 4, 3) * 70 + 'ms';
