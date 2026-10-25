@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dicewise · Rolling Dice Puzzle</title>
+<title data-es="Dicewise · Puzzle de dados">Dicewise · Rolling Dice Puzzle</title>
+<script src="../lang.js"></script>
 <meta name="description" content="Dicewise is a calm logic puzzle for Android. Roll the die to the goal: every face matters.">
 <meta property="og:title" content="Dicewise: Rolling Dice Puzzle">
 <meta property="og:description" content="Roll the die to the goal. Every face matters in this calm logic puzzle.">
@@ -13,32 +14,38 @@
 </head>
 <body>
 <main>
-<nav><a href="../">← Saix</a></nav>
+<div class="top">
+  <a href="../">← Saix</a>
+  <button class="lang-toggle" type="button" aria-label="Change language / Cambiar idioma"><span class="en">EN</span> · <span class="es">ES</span></button>
+</div>
 
 <div class="featured">
-  <img src="Dicewise-Icon.png" alt="Dicewise icon" width="112" height="112">
+  <img src="Dicewise-Icon.png" alt="Dicewise" width="112" height="112">
   <div>
     <h1>Dicewise</h1>
-    <p class="meta" style="margin:0">Puzzle · Android · Free with ads</p>
-    <p>Roll the die to the goal. Every face matters in this calm logic puzzle.</p>
+    <p class="meta" style="margin:0"><span lang="en">Puzzle · Android · Free with ads</span><span lang="es">Puzle · Android · Gratis con anuncios</span></p>
+    <p lang="en">Roll the die to the goal. Every face matters in this calm logic puzzle.</p>
+    <p lang="es">Rueda el dado hasta la meta. En este puzle de lógica, cada cara cuenta.</p>
     <!-- When the game is live, replace this span with:
-         <a class="button" href="https://play.google.com/store/apps/details?id=com.saix.dicewise">Get it on Google Play</a> -->
-    <span class="button disabled">Coming soon to Google Play</span>
+         <a class="button" href="https://play.google.com/store/apps/details?id=com.saix.dicewise"><span lang="en">Get it on Google Play</span><span lang="es">Disponible en Google Play</span></a> -->
+    <span class="button disabled"><span lang="en">Coming soon to Google Play</span><span lang="es">Próximamente en Google Play</span></span>
   </div>
 </div>
 
-<h2>About</h2>
-<p>Dicewise is a puzzle game built on one simple idea: a die that rolls. Every roll tips the die onto a new face, so where you can go next depends on every move you made before. Plan your path, land the right color in the right place and reach the golden goal.</p>
+<h2><span lang="en">About</span><span lang="es">El juego</span></h2>
+<p lang="en">Dicewise is a puzzle game built on one simple idea: a die that rolls. Every roll tips the die onto a new face, so where you can go next depends on every move you made before. Plan your path, land the right color in the right place and reach the golden goal.</p>
+<p lang="es">Dicewise es un juego de puzles con una idea sencilla: un dado que rueda. Cada movimiento vuelca el dado sobre una cara nueva, así que adónde puedes ir depende de todo lo que has hecho antes. Planea tu camino, pon el color adecuado en el sitio adecuado y llega a la meta dorada.</p>
 
 <div class="shots">
-  <img src="Screenshots/01-gameplay.png" alt="Rolling the die across a board" width="1080" height="1920" loading="lazy">
-  <img src="Screenshots/02-advanced.png" alt="An advanced level with several tile types" width="1080" height="1920" loading="lazy">
-  <img src="Screenshots/03-new-rule.png" alt="A card introducing a new rule" width="1080" height="1920" loading="lazy">
-  <img src="Screenshots/04-level-complete.png" alt="Level complete with three stars" width="1080" height="1920" loading="lazy">
-  <img src="Screenshots/05-shop.png" alt="The shop with dice and backgrounds" width="1080" height="1920" loading="lazy">
-  <img src="Screenshots/06-menu.png" alt="Main menu" width="1080" height="1920" loading="lazy">
+  <img src="Screenshots/01-gameplay.png" alt="" width="1080" height="1920" loading="lazy">
+  <img src="Screenshots/02-advanced.png" alt="" width="1080" height="1920" loading="lazy">
+  <img src="Screenshots/03-new-rule.png" alt="" width="1080" height="1920" loading="lazy">
+  <img src="Screenshots/04-level-complete.png" alt="" width="1080" height="1920" loading="lazy">
+  <img src="Screenshots/05-shop.png" alt="" width="1080" height="1920" loading="lazy">
+  <img src="Screenshots/06-menu.png" alt="" width="1080" height="1920" loading="lazy">
 </div>
 
+<div lang="en">
 <h2>Think before you roll</h2>
 <ul>
   <li>Swipe to roll the die across the board.</li>
@@ -54,9 +61,28 @@
 <p>Levels keep coming, each one checked to have a solution. Finish a level in the fewest moves to earn all three stars. Stuck? A hint shows you the next step, at the cost of a star. Earn coins as you play and spend them on more than 50 dice and backgrounds.</p>
 
 <p>Play offline, at your own pace, a few levels at a time.</p>
+</div>
+
+<div lang="es">
+<h2>Piensa antes de rodar</h2>
+<ul>
+  <li>Desliza para hacer rodar el dado por el tablero.</li>
+  <li>Las casillas de color solo aceptan la cara de su color.</li>
+  <li>El tablero te muestra qué cara caerá en cada lado, para que planees sin tener que memorizar el dado.</li>
+  <li>Deshacer es gratis. Sin vidas, sin cronómetros, sin prisas.</li>
+</ul>
+
+<h2>Siempre hay reglas nuevas</h2>
+<p>Casillas agrietadas que se rompen a tu paso. Sellos que llenar con el color correcto. Hielo que hace deslizar el dado. Plataformas giratorias, interruptores que abren puertas, puentes que se levantan y teletransportes que lo mandan al otro lado del tablero. Cada regla se presenta con una tarjeta breve y luego se mezcla con las que ya conoces.</p>
+
+<h2>Consigue las tres estrellas</h2>
+<p>Los niveles no se acaban, y todos tienen solución comprobada. Termina un nivel con el mínimo de movimientos para conseguir las tres estrellas. ¿Atascado? Una pista te muestra el siguiente paso, a cambio de una estrella. Gana monedas jugando y gástalas en más de 50 dados y fondos.</p>
+
+<p>Juega sin conexión, a tu ritmo, unos pocos niveles cada vez.</p>
+</div>
 
 <hr>
-<p class="meta"><a href="privacy-policy.html">Privacy policy</a> · Contact: <a href="mailto:r.torresgonzalez.93@gmail.com">r.torresgonzalez.93@gmail.com</a></p>
+<p class="meta"><a href="privacy-policy.html"><span lang="en">Privacy policy</span><span lang="es">Política de privacidad</span></a> · <span lang="en">Contact</span><span lang="es">Contacto</span>: <a href="mailto:r.torresgonzalez.93@gmail.com">r.torresgonzalez.93@gmail.com</a></p>
 </main>
 </body>
 </html>
