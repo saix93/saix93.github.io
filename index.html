@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title data-es="Saix · Desarrollador de videojuegos">Saix · Game Developer</title>
+<title data-es="Raúl Torres (Saix) · Desarrollador de videojuegos">Raúl Torres (Saix) · Game Developer</title>
 <script src="lang.js"></script>
-<meta name="description" content="Saix is an indie game developer. Puzzle and action games for Android and the web.">
+<meta name="description" content="Raúl Torres González, aka Saix, is an indie game developer. Puzzle and action games for Android and the web, plus photography.">
 <link rel="icon" href="dicewise/Dicewise-Icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +21,12 @@
 
 <header class="hero">
   <div>
+    <img class="avatar" src="img/me.jpg" alt="Raúl Torres González" width="480" height="480">
     <p class="eyebrow"><span lang="en">// indie game developer</span><span lang="es">// desarrollador de videojuegos indie</span></p>
-    <h1>Saix</h1>
-    <p class="lead" lang="en">Hi, I'm Saix. I code, I game and I code games.</p>
-    <p class="lead" lang="es">Hola, soy Saix. Programo, juego y programo juegos.</p>
+    <h1>Raúl Torres González</h1>
+    <p class="aka"><span lang="en">aka</span><span lang="es">alias</span> <strong>Saix</strong></p>
+    <p class="lead" lang="en">Hi, I'm Raúl, also known as Saix. I code, I game and I code games.</p>
+    <p class="lead" lang="es">Hola, soy Raúl, también conocido como Saix. Programo, juego y programo juegos.</p>
     <div class="actions">
       <a class="pill" href="https://saix93.itch.io/">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="4"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="11" r=".6" fill="currentColor"/><circle cx="18" cy="13.5" r=".6" fill="currentColor"/></svg>
@@ -114,8 +116,36 @@
 </ul>
 <a class="more" href="https://saix93.itch.io/"><span lang="en">All games on itch.io →</span><span lang="es">Todos los juegos en itch.io →</span></a>
 
+<h2 class="section-title" id="photos"><span class="idx">03</span><span lang="en">Photography</span><span lang="es">Fotografía</span></h2>
+<p class="section-intro" lang="en">When I'm not making games, I'm usually behind a camera, or around a table full of board games. Here are some of my photos.</p>
+<p class="section-intro" lang="es">Cuando no estoy haciendo juegos, suelo estar detrás de una cámara o alrededor de una mesa llena de juegos de mesa. Aquí tienes algunas de mis fotos.</p>
+<div class="filters" role="group" aria-label="Filter photos">
+  <button type="button" data-filter="all" aria-pressed="true"><span lang="en">All</span><span lang="es">Todas</span></button>
+  <button type="button" data-filter="nature" aria-pressed="false"><span lang="en">Nature</span><span lang="es">Naturaleza</span></button>
+  <button type="button" data-filter="city" aria-pressed="false"><span lang="en">City</span><span lang="es">Ciudad</span></button>
+  <button type="button" data-filter="boardgames" aria-pressed="false"><span lang="en">Board games</span><span lang="es">Juegos de mesa</span></button>
+</div>
+<ul class="gallery">
+  <li data-cat="boardgames"><a href="img/photos/3478.jpg"><img src="img/photos/3478-sm.jpg" alt="Board game in progress on a dark table" width="800" height="533" loading="lazy"></a></li>
+  <li data-cat="city"><a href="img/photos/2397.jpg"><img src="img/photos/2397-sm.jpg" alt="Collserola tower rising out of the fog" width="533" height="800" loading="lazy"></a></li>
+  <li data-cat="nature"><a href="img/photos/2288.jpg"><img src="img/photos/2288-sm.jpg" alt="Stacked stones on a tree stump in a pine forest" width="800" height="533" loading="lazy"></a></li>
+  <li data-cat="city"><a href="img/photos/2490.jpg"><img src="img/photos/2490-sm.jpg" alt="Stone sculpture on a church facade" width="800" height="533" loading="lazy"></a></li>
+  <li data-cat="boardgames"><a href="img/photos/3395.jpg"><img src="img/photos/3395-sm.jpg" alt="A board game spread over a living room table" width="533" height="800" loading="lazy"></a></li>
+  <li data-cat="city"><a href="img/photos/3153.jpg"><img src="img/photos/3153-sm.jpg" alt="Tilt-shift view of a car park" width="800" height="533" loading="lazy"></a></li>
+  <li data-cat="nature"><a href="img/photos/2286.jpg"><img src="img/photos/2286-sm.jpg" alt="Pine forest with a stone stack in the light" width="800" height="533" loading="lazy"></a></li>
+  <li data-cat="city"><a href="img/photos/3160.jpg"><img src="img/photos/3160-sm.jpg" alt="Tilt-shift view of a street and bus stop" width="800" height="533" loading="lazy"></a></li>
+</ul>
+
+<dialog class="lightbox" aria-label="Photo">
+  <img alt="">
+  <button type="button" class="lb-prev" aria-label="Previous">‹</button>
+  <button type="button" class="lb-next" aria-label="Next">›</button>
+  <button type="button" class="lb-close" aria-label="Close">✕</button>
+</dialog>
+<script src="gallery.js"></script>
+
 <footer class="footer">
-  <span>© 2026 Saix</span>
+  <span>© 2026 Raúl Torres González · Saix</span>
   <ul class="pips" aria-hidden="true"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
 </footer>
 </main>
