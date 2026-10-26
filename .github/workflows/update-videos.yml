@@ -1,0 +1,32 @@
+# Refreshes videos-list.js and img/videos/ from the YouTube channel once a day,
+# and commits the result only when something changed. Can also be run by hand from the Actions tab.
+name: Update YouTube videos
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/videos-exclude.txt', 'scripts/update-videos.mjs']
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/update-videos.mjs
+      - name: Commit changes
+        run: |
+          git add -A videos-list.js img/videos
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update YouTube videos"
+          git push
