@@ -6,5 +6,6 @@ window.TAGLINES = [
   { en: 'puzzle game enthusiast', es: 'fan de los juegos de puzles' },
   { en: 'occasional photographer', es: 'fotógrafo ocasional' },
   { en: 'now playing: Dicewise', es: 'jugando a: Dicewise', link: 'dicewise/' },
-  { en: 'it works on my machine', es: 'en mi máquina funciona' }
+  { en: 'it works on my machine', es: 'en mi máquina funciona' },
+  { en: 'hello, human', es: 'hola, humano', link: 'https://www.youtube.com/watch?v=9fEDE1QzBp4' },
 ];
