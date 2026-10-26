@@ -276,6 +276,7 @@ html[lang="en"] .lang-toggle .en, html[lang="es"] .lang-toggle .es { color: var(
 
 /* Blinking caret after the eyebrow */
 .eyebrow::after { content: "_"; animation: blink 1.1s steps(1) infinite; }
+.eyebrow.typing::after { animation: none; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* Gallery: zoom the hovered photo, dim the rest */
