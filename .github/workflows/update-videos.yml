@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/videos-exclude.txt', 'scripts/update-videos.mjs']
+    paths: ['scripts/videos-whitelist.txt', 'scripts/update-videos.mjs']
 
 permissions:
   contents: write
@@ -24,7 +24,7 @@ jobs:
       - run: node scripts/update-videos.mjs
       - name: Commit changes
         run: |
-          git add -A videos-list.js img/videos
+          git add -A videos-list.js img/videos scripts/videos-whitelist.txt
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
