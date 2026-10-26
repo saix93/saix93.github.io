@@ -26,7 +26,7 @@
 
   // Reveal on scroll, staggered within each group of siblings
   if (!('IntersectionObserver' in window)) return;
-  var targets = document.querySelectorAll('.section-title, .featured, .grid > li, .videos > li, .section-cta, .gallery > li, .filters, .section-intro, .banner, .game-head, .tagline, .store-row, .shots, .feature');
+  var targets = document.querySelectorAll('.section-title, .featured, .work > li, .grid > li, .videos > li, .section-cta, .gallery > li, .filters, .section-intro, .banner, .game-head, .tagline, .store-row, .shots, .feature');
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (!en.isIntersecting) return;
@@ -39,7 +39,7 @@
   }, { threshold: 0.05 });
   Array.prototype.forEach.call(targets, function (el) {
     var i = Array.prototype.indexOf.call(el.parentNode.children, el);
-    if (el.matches('.grid > li, .videos > li, .gallery > li, .feature')) el.style.transitionDelay = Math.min(i % 4, 3) * 70 + 'ms';
+    if (el.matches('.work > li, .grid > li, .videos > li, .gallery > li, .feature')) el.style.transitionDelay = Math.min(i % 4, 3) * 70 + 'ms';
     el.classList.add('reveal');
     io.observe(el);
   });
